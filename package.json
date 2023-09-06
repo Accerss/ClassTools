@@ -47,6 +47,7 @@
   },
   "packageManager": "yarn@3.5.0",
   "dependencies": {
+    "auto-launch": "^5.0.6",
     "ffi-napi": "^4.0.3",
     "ref-napi": "^3.0.3",
     "wallpaper": "^6.1.1",

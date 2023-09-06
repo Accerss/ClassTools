@@ -1,4 +1,5 @@
 import { app, dialog, Menu } from 'electron';
+import * as AutoLaunch from 'auto-launch';
 import os from 'os';
 import windowManager from './utils/windowManager';
 import tray from './components/tray';
@@ -36,6 +37,27 @@ if (!app.requestSingleInstanceLock()) {
   app.quit();
   process.exit(0);
 }
+
+//开机自启动
+app.on('ready', () => {
+  // 创建一个AutoLaunch实例
+  const autoLauncher = new AutoLaunch({
+    name: 'YourAppName', // 应用程序的名称
+    path: app.getPath('exe') // 应用程序的路径
+  });
+
+  // 检查是否已设置开机启动项
+  autoLauncher.isEnabled()
+    .then((isEnabled) => {
+      if (!isEnabled) {
+        // 如果未设置开机启动项，则设置它
+        autoLauncher.enable();
+      }
+    })
+    .catch((err) => {
+      console.log(err);
+    });
+});
 
 app.whenReady().then(async () => {
   setupUpdateChecker();

@@ -13,7 +13,7 @@ useTitle('ClassTools Demo');
         ClassTools
         <span style="font-weight: normal">Demo</span>
       </p>
-      <a href="https://github.com/ClassToolsOfficial/ClassTools" target="_blank"
+      <a href="https://gwzone.cn/" target="_blank"
          style="display: flex; align-items: center; font-size: 1.5em; color: unset; margin-block-end: 3em">
         <GithubIcon/>
         GitHub

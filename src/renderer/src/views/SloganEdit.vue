@@ -9,7 +9,7 @@ import FontSizeSliderFormItem from '../components/FontSizeSliderFormItem.vue';
   <n-layout>
     <n-layout-content content-style="padding: 24px;">
       <n-form
-        label-placement="top"
+        label-placement="middle"
         label-width="auto"
       >
         <n-form-item

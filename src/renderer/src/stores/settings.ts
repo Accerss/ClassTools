@@ -10,8 +10,8 @@ if (window.fs && !localStorage.getItem('settings')) {
   }
 }
 const settings = createAutoUpdateStorage('settings', {
-  countDownName: '高考',
-  countDownDate: 1686067200000,
+  countDownName: '过年',
+  countDownDate: 1707494400000,
   dateFormat: 'yyyy 年 M 月 d 日',
   timeFormat: 'H:mm:ss',
   // 这里是 em
@@ -24,7 +24,7 @@ const settings = createAutoUpdateStorage('settings', {
   shadowColor: '#fff',
   font: 'BlinkMacSystemFont, "PingFang SC", "Microsoft Yahei", "MicrosoftJhengHei", sans-serif',
   dateSize: 1.7,
-  city: 'CN101010100',
+  city: 'CN101180802',
   weatherKey: '',
   weatherKeyHidden: false,
   weatherComponents: ['realtime', 'rain', 'props', '24h', '7days'],
@@ -64,13 +64,13 @@ const settings = createAutoUpdateStorage('settings', {
     { name: '班务', hasHomework: true },
     { name: '精神食粮', hasHomework: false },
   ],
-  dutyTypes: ['教室', '走廊', '黑板', '倒垃圾', '包干区'],
+  dutyTypes: ['擦黑板+讲台', '走廊扫地', '置物架+玻璃', '走廊拖地', '教室打扫', '教室拖地', '卫生角+倒垃圾', '包干区打扫', '包干区拖地'],
   duty: new Array(7).fill({}),
   homeworkViewerSize: 1.2,
   homeworkViewerCols: 3,
   showSchedule: true,
-  showTomorrowScheduleAfter: '16:00:00',
-  showTomorrowDutyAfter: '16:00:00',
+  showTomorrowScheduleAfter: '20:30:00',
+  showTomorrowDutyAfter: '20:30:00',
   showDuty: true,
   createDesktopShortcut: true,
   autoNewDay: false,
@@ -88,7 +88,7 @@ if (init) {
 
 // 20220512 更改 showTomorrowScheduleAfter 格式为 HH:mm:ss
 if (typeof settings.value.showTomorrowScheduleAfter === 'number') {
-  settings.value.showTomorrowScheduleAfter = '16:00:00';
+  settings.value.showTomorrowScheduleAfter = '20:30:00';
 }
 
 export default settings;

@@ -21,7 +21,7 @@ const BUILD_DATE = window.BUILD_DATE;
         构建日期:
         <n-time :time="BUILD_DATE" format="yyyy/M/d H:mm:ss"/>
       </n-text>
-      <a href="https://github.com/ClassToolsOfficial/ClassTools" target="_blank"
+      <a href="https://gwzone.cn/" target="_blank"
          style="display: flex; align-items: center; font-size: 1.2em; color: unset; margin: 0.3em 0">
         <GithubIcon/>
         GitHub

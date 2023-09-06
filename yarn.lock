@@ -1018,6 +1018,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"applescript@npm:^1.0.0":
+  version: 1.0.0
+  resolution: "applescript@npm:1.0.0"
+  checksum: 77469e6a71425131329c1bd0844a6d3cc6224131c74651e771209926b3d35d7e4a4426a8d3b7bab0c1d4bb0c2fe4e9439adbdbf1fc3af691e0386d85341a89bf
+  languageName: node
+  linkType: hard
+
 "aproba@npm:^1.0.3 || ^2.0.0":
   version: 2.0.0
   resolution: "aproba@npm:2.0.0"
@@ -1106,6 +1113,19 @@ __metadata:
   version: 1.0.0
   resolution: "at-least-node@npm:1.0.0"
   checksum: 463e2f8e43384f1afb54bc68485c436d7622acec08b6fad269b421cb1d29cebb5af751426793d0961ed243146fe4dc983402f6d5a51b720b277818dbf6f2e49e
+  languageName: node
+  linkType: hard
+
+"auto-launch@npm:^5.0.6":
+  version: 5.0.6
+  resolution: "auto-launch@npm:5.0.6"
+  dependencies:
+    applescript: ^1.0.0
+    mkdirp: ^0.5.1
+    path-is-absolute: ^1.0.0
+    untildify: ^3.0.2
+    winreg: 1.2.4
+  checksum: 4da4b6033b5556091f57f4a271cd6484c5f46f48da2949644f4f5462b07b6f3739d77b9ffcdd96c8c2b1f3c51ae17743ad555ff2bddfb684760c74a621f11896
   languageName: node
   linkType: hard
 
@@ -1392,6 +1412,7 @@ __metadata:
     "@types/xml2js": ^0.4.11
     "@vitejs/plugin-vue": ^4.0.0
     "@vueuse/core": ^9.6.0
+    auto-launch: ^5.0.6
     compare-versions: ^5.0.1
     electron: 20
     electron-builder: ^23.6.0
@@ -3272,6 +3293,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"minimist@npm:^1.2.6":
+  version: 1.2.8
+  resolution: "minimist@npm:1.2.8"
+  checksum: 75a6d645fb122dad29c06a7597bddea977258957ed88d7a6df59b5cd3fe4a527e253e9bbf2e783e4b73657f9098b96a5fe96ab8a113655d4109108577ecf85b0
+  languageName: node
+  linkType: hard
+
 "minimist@npm:^1.2.7":
   version: 1.2.7
   resolution: "minimist@npm:1.2.7"
@@ -3346,6 +3374,17 @@ __metadata:
     minipass: ^3.0.0
     yallist: ^4.0.0
   checksum: f1fdeac0b07cf8f30fcf12f4b586795b97be856edea22b5e9072707be51fc95d41487faec3f265b42973a304fe3a64acd91a44a3826a963e37b37bafde0212c3
+  languageName: node
+  linkType: hard
+
+"mkdirp@npm:^0.5.1":
+  version: 0.5.6
+  resolution: "mkdirp@npm:0.5.6"
+  dependencies:
+    minimist: ^1.2.6
+  bin:
+    mkdirp: bin/cmd.js
+  checksum: 0c91b721bb12c3f9af4b77ebf73604baf350e64d80df91754dc509491ae93bf238581e59c7188360cec7cb62fc4100959245a42cfe01834efedc5e9d068376c2
   languageName: node
   linkType: hard
 
@@ -4470,6 +4509,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"untildify@npm:^3.0.2":
+  version: 3.0.3
+  resolution: "untildify@npm:3.0.3"
+  checksum: 1c42352a37d9663090f126f343f1ee0a0b90c0a4bd7991229a6f474fa0ab856880f0e8798c15fa12c13e64c5345f63dd428e4b6ac2073d594839548025a4bed9
+  languageName: node
+  linkType: hard
+
 "uri-js@npm:^4.2.2":
   version: 4.4.1
   resolution: "uri-js@npm:4.4.1"
@@ -4710,6 +4756,13 @@ __metadata:
     ref-struct-di: ^1.1.1
     ref-union-di: ^1.0.1
   checksum: d158b1fb00f82bc46bc4538f46df542109be23046b86508cec92bc1a1b052fce42d87c8d5d18fc289e719468ffaebcd0fc9d2a546dd5c9a88e72d109c598aacc
+  languageName: node
+  linkType: hard
+
+"winreg@npm:1.2.4":
+  version: 1.2.4
+  resolution: "winreg@npm:1.2.4"
+  checksum: 6b28ed0c289bdbae87bd05c69fe676765fa51ca28a904cceb89a30ee1ddd61ae1432d0d4f51621a86c4fbdefa8ad380e9eaa90cbdc722ccae11396231475e3cf
   languageName: node
   linkType: hard
 
